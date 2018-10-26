@@ -1,0 +1,23 @@
+# First let's stop focusing on 1000. Let's focus on 990 instead. It is the largest number under 1000 that is divisible by #both 5 and 3.  
+
+D = 993+995+996+999
+# sum of all numbers over 990 divisible by either 3 or 5
+
+Numberdivisible_by_3 = 990/3
+A = Numberdivisible_by_3 * (990 + 3)/2
+
+Numberdivisible_by_5 = 990/5
+B = Numberdivisible_by_5 * (990 + 5)/2
+
+
+#Unfourtunatley now every number under 100 that is divisible by 15 has been counted twice. So we need to #determine the sum all number under 1000 divisible by 15 and subtract it from a and b 
+
+Numberdivisible_by_15 = 990/15
+C = Numberdivisible_by_15 * (990 + 15)/2
+
+
+#So our total sum of all numbers divisible by 5 or 3 under 1000 is  (D)+(A)+(B)−(C). Let's test it out.
+
+Total_sum = D + A + B - C
+
+print (Total_sum)
